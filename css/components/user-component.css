@@ -1,0 +1,42 @@
+.user-component{
+    justify-content: space-between;
+}
+.user-component,
+.user-component__column:first-child{/*user-component_column 중 첫번째*/
+    display: flex;
+    align-items: center;
+}
+.user-component__column:last-child{
+    opacity: 0.6;
+}
+.user-component__avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin: var(--horizontal-space);
+}
+.user-component__text{
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: var(--horizontal-space);
+}
+.user-component__text__not-bold{
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: var(--horizontal-space);
+}
+.user-component__subtitle{
+    opacity: 0.5;
+    font-size: 15px;
+    margin-top:7px;
+}
+.user-component__avatar__xl{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+}
+.user-component__avatar__sm{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
