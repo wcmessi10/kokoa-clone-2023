@@ -39,6 +39,8 @@
     color: tomato;
     margin-left: 10px;
     text-align: center;
+    width: 15px;
+    height: 15px;
 }
 .user-component__avatar__xl{
     width: 80px;
