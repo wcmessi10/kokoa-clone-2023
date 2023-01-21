@@ -31,6 +31,14 @@
     opacity: 0.5;
     font-size: 15px;
     margin-top:7px;
+    display: flex;
+}
+.user-component__subtitle span{
+    border-radius: 50%;
+    border:1px solid tomato;
+    color: tomato;
+    margin-left: 10px;
+    text-align: center;
 }
 .user-component__avatar__xl{
     width: 80px;

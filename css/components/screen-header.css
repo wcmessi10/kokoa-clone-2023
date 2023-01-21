@@ -26,3 +26,13 @@
     bottom: 17px;
     left: 70px;
 }
+.header__icon__newthing__more{
+    color:tomato;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    left: 120px;
+}
