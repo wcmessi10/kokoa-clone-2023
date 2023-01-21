@@ -10,6 +10,19 @@
     font-size: 32px;
     font-weight: 600;
 }
+.header__icon{
+    position: relative;
+}
 .header__icon span{
     margin-left: 25px;
+}
+.header__icon__newthing{
+    color:tomato;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    left: 70px;
 }
