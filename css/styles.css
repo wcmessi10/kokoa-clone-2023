@@ -15,6 +15,7 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -22,4 +23,7 @@ body{
     padding: 0px var(--horizontal-space);
     height: 160vh;
     margin-bottom: 80px;
+}
+.settings-screen{
+    padding-top: 83px;
 }
