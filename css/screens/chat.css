@@ -62,3 +62,60 @@
 .message-row__own .message__info{
     flex-direction: row-reverse;
 }
+.reply{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.reply input{
+    /* 부모에게 width를 줘야 자식에게도 width를 줄 수 있다 */
+    padding: 6px 9px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+.reply__column:first-child{
+    width: 8%;
+}
+.reply__column:first-child i{
+    opacity: 0.5;
+}
+.reply__column:last-child{
+    width: 92%;
+    height: 30px;
+    position: relative;
+}
+.reply__column:last-child >i, button{
+    position:absolute;
+    right: -6px;
+    top: 8px;
+}
+/* > 다이렉트 last-child 바로 밑의 i만 */
+.reply__column:last-child >i{
+    right: 25px;
+    top: 6px;
+    opacity: 0.6;
+}
+.reply__column button{
+    color: var(--yellow);
+    background-color: black;
+    border: none;
+    width: 15px;
+    height: 15px;
+    font-size:26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 7px;
+}
+.reply__column button:focus,
+.reply__column button:active{
+    outline: none;
+}
