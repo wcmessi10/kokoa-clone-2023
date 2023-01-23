@@ -27,3 +27,28 @@ body{
 .settings-screen{
     padding-top: 83px;
 }
+#splash-screen{
+    background-color: var(--yellow);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    z-index: 4;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    /* forwards : 애니메이션의 마지막 상태를 유지하겠다*/
+    animation-delay: 1.5s;
+}
+@keyframes hideSplashScreen{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+        visibility: hidden;
+        /*아예 숨어있는 것 숨겨서 안보일 뿐 없어지는 건 아님
+        자바는 이용하는 것이 아님*/
+    }
+}
