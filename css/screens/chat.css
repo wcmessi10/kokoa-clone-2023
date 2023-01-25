@@ -1,11 +1,41 @@
 #chat-screen{
     background-color: #abc1d1;
+    
+}
+@keyframes fadeIn{
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }to{
+        transform: none;
+        opacity: 1;
+    }
 }
 .main-chat{
     margin-top: 115px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500vh;
+    animation: fadeIn 0.3s linear;
+}
+@keyframes uploadChat{
+    from{
+        opacity: 0;
+        transform:translateX(-25px);
+    }to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes uploadOwnChat{
+    from{
+        opacity: 0;
+        transform:translateX(25px);
+    }to{
+        opacity: 1;
+        transform: none;
+    }
 }
 .chat-timestamp{
     color: white;
@@ -19,6 +49,9 @@
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    opacity: 0;
+    animation: uploadChat 2s ease-in-out forwards ;
+    animation-delay: 1s;
 }
 .message-row img{
     width: 50px;
@@ -50,6 +83,8 @@
 }
 .message-row__own{
     justify-content: flex-end;
+    animation: uploadOwnChat 2s ease-in-out forwards;
+    animation-delay: 4s;
 }
 .message-row__own .message__bubble{
     background-color: var(--yellow);
@@ -72,6 +107,7 @@
     padding:5px 20px;
     align-items: center;
     box-sizing: border-box;
+    transition: transform .3s ease-in-out;
 }
 .reply input{
     /* 부모에게 width를 줘야 자식에게도 width를 줄 수 있다 */
@@ -79,6 +115,7 @@
     width: 100%;
     border: var(--main-border);
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .reply__column:first-child{
     width: 8%;
@@ -118,4 +155,19 @@
 .reply__column button:focus,
 .reply__column button:active{
     outline: none;
+}
+.reply .reply__column:first-child,
+.reply .fa-grin{
+    transition: opacity .3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-grin{
+    opacity: 0;
+}
+.reply:focus-within{
+    transform: translateY(80px);
+}
+.reply:focus-within input{
+    width:92vw;
+    transform: translateX(-50px) translateY(-80px);
 }
