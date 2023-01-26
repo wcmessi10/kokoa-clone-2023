@@ -109,7 +109,7 @@
     box-sizing: border-box;
     transition: transform .3s ease-in-out;
 }
-.reply input{
+.reply input, .reply button{
     /* 부모에게 width를 줘야 자식에게도 width를 줄 수 있다 */
     padding: 6px 9px;
     width: 100%;
@@ -170,4 +170,7 @@
 .reply:focus-within input{
     width:92vw;
     transform: translateX(-50px) translateY(-80px);
+}
+.reply:focus-within button{
+    transform: translateY(-80px);
 }
