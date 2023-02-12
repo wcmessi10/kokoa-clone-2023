@@ -1,5 +1,6 @@
 .user-component{
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .user-component,
 .user-component__column:first-child{/*user-component_column 중 첫번째*/

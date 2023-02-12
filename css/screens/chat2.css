@@ -1,0 +1,25 @@
+.message-row2{
+
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    animation: uploadChat 2s ease-in-out forwards ;
+    animation-delay: 1s;
+}
+.message-row2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+.second{
+    animation-delay: 3s;
+    margin-bottom: 25px;
+}
+.second img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 10px;
+    opacity: 0;
+}
